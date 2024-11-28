@@ -1,0 +1,144 @@
+body{
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: white;
+    font-weight: 600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+@media (min-width: 360px) and (max-width: 767px){
+.body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+h1{
+    padding: 7px;
+    text-align: center;
+}
+.article-list{
+    width: 100%;
+    padding: 5px;
+}
+.article{
+    width: 100%;
+    margin-top: 2.5em;
+}
+.article img{
+    width: 8em;
+    border-radius: 1em;
+}
+.article .describe{
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-top: 1.5em;
+    line-height: 25px;
+    color: rgb(31, 30, 30);
+}
+.article .date{
+    margin-top: 12px;
+    font-size: 12px;
+    font-weight: 800;
+    color: rgb(139, 139, 139);
+}
+.slash{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2em;
+    margin-top: 2.5em;
+}
+.slash p{
+    color: rgb(199, 198, 198);
+}
+}
+
+@media (min-width: 768px) and (max-width: 1124px){
+    .body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 6em;
+    }
+    h1{
+        padding: 2em;
+        text-align: center;
+        word-spacing: 1px;
+    }
+    .article{
+        display: flex;
+        margin: 0.5em;
+    }
+    .paragraph{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 15px;
+    }
+    .article img{
+        border-radius: 1em;
+        margin: 2em;
+    }
+    .article .describe{
+        font-size: 1.5em;
+        font-weight: 800;
+        margin-top: 1.5em;
+        line-height: 30px;
+        color: rgba(0, 0, 0, 0.904);
+    }
+    .article .date{
+        margin-top: 25px;
+        color: rgb(139, 139, 139);
+    }
+    .slash{
+        color: rgba(199, 198, 198, 0.863)
+    }
+}
+
+@media (min-width: 1125px){
+    .body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        flex-direction: column;
+    }
+    h1{
+        margin-top: 3em;
+        padding-left: 9em;
+        padding-right: 9em;
+        text-align: center;
+    }
+    .article{
+        display: flex;
+    }
+    .article img{
+        margin: 2em;
+        border-radius: 1em;
+    }
+    .article .describe{
+        font-size: 18px;
+        font-weight: 100;
+    }
+    .paragraph{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding-left: 1.5em;
+    }
+    .slash{
+        margin: 3em;
+        color: rgb(199, 198, 198);
+    }
+    .article .date{
+        font-size: 16px;
+        color: rgb(139, 139, 139);
+        margin-top: 20px;
+    }
+}
